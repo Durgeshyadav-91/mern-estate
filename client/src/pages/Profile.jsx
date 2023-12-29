@@ -54,7 +54,7 @@ export default function Profile() {
         <p className="self-center text-sm">
           {fileUploadError ? 
           (<span className="text-red-700">
-          Error Image upload
+          Error Image upload (Image must be 2 Mb)
           </span>) :
            filePerc > 0 && filePerc < 100 ? (
           <span className="text-slate-700">
@@ -62,8 +62,8 @@ export default function Profile() {
             </span>) : filePerc === 100 ? (
               <span className="text-green-700">
               Image uploaded successfully
-              </span>) : (""
-            )}
+              </span>) : ("")
+            }
         </p>
         <input
           type="text"
