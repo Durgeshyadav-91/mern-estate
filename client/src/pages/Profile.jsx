@@ -14,8 +14,8 @@ export default function Profile() {
   const [ file, setfile ] = useState(undefined)
   const [ filePerc, setFilePerc ] = useState(0);
   const [ fileUploadError, setFileUploadError ] = useState(false);
-  const [formData, setFormData ] = useState({});
-  const [updateSuccess, setUpdateSuccess] = useState(false);
+  const [ formData, setFormData ] = useState({});
+  const [ updateSuccess, setUpdateSuccess] = useState(false);
   const [ showListingsError, setShowListingsError ] = useState(false);
   const [ userListings, setUserListings] = useState([]);
   const dispatch = useDispatch();
@@ -221,7 +221,9 @@ export default function Profile() {
           </Link>
           <div className="flex flex-col items-center">
             <button onClick={()=>handleListingDelete(listing._id)} className="text-red-700 uppercase items-center">Delete</button>
+            <Link to={`/update-listing/${listing._id}`}>
             <button className="text-green-700 uppercase">Edit</button>
+            </Link>
           </div>
         </div>
       )}
