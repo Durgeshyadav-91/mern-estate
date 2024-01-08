@@ -20,7 +20,7 @@ export default function updateListing() {
     description: "", 
     address: "",
     type: "rent",
-    bedrooms: 5,
+    bedrooms: 1,
     bathrooms: 5,
     regularPrice: 50,
     discountPrice: 0,

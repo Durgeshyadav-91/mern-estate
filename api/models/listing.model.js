@@ -26,7 +26,7 @@ const listingSchema = new mongoose.Schema(
             type: Number,
             requied: true,
         },
-        bedroom:{
+        bedrooms:{
             type: Number,
             requied: true,
         },
