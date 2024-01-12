@@ -11,7 +11,6 @@ export default function Home() {
   const [saleListings, setSaleListings ] = useState([]);
   const [rentListings, setRentListings ] = useState([]);
   SwiperCore.use([Navigation]);
-  console.log(saleListings);
 
   useEffect(() => {
     const fetchOfferListings = async () => {
@@ -53,9 +52,9 @@ export default function Home() {
   return (
     <div>
       <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto'>
-        <h1 className='text-slate-700 font-bold text-3xl lg:text-6xl'>Find your next 
-        <span className='text-slate-500 '> perfect</span> <br/>place with ease</h1>
-        <div className='text-gray-400 text-xs sm:text-sm'>Golden Estate is the best place to find your next perfect place to live.<br/>
+        <h1 className='text-slate-700 font-bold text-3xl lg:text-6xl'>Find Your Perfect
+        <span className='text-slate-500 '>Home</span> <br/>place with US</h1>
+        <div className='text-gray-400 pt-2 text-xs sm:text-sm'><strong>Golden Estate</strong> is the best place to find your next perfect place to live.<br/>
               We have a wide range of properties for you to choose from.
         </div>
         <Link to={'/search'} className='text-xs sm:text-sm text-blue-800 font-bold 

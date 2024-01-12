@@ -98,9 +98,8 @@ export default function Listing() {
                 text-center p-1 rounded-md'>
                     {listing.type === 'rent' ? 'For Rent' : 'For Sale'}
                 </p>
-                {
-                    listing.offer && (
-                        <p className='bg-green-800 w-full max-w-[200px] text-white
+                {listing.offer && (
+                  <p className='bg-green-800 w-full max-w-[200px] text-white
                 text-center p-1 rounded-md'>${+listing.regularPrice - +listing.discountPrice} OFF</p>
                     )
                 }
