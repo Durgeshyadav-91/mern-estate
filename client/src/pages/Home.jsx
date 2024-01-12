@@ -53,7 +53,7 @@ export default function Home() {
     <div>
       <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto'>
         <h1 className='text-slate-700 font-bold text-3xl lg:text-6xl'>Find Your Perfect
-        <span className='text-slate-500 '>Home</span> <br/>place with US</h1>
+        <span className='text-slate-500 '> Home</span> <br/>place with US</h1>
         <div className='text-gray-400 pt-2 text-xs sm:text-sm'><strong>Golden Estate</strong> is the best place to find your next perfect place to live.<br/>
               We have a wide range of properties for you to choose from.
         </div>
@@ -73,7 +73,7 @@ export default function Home() {
       </Swiper>
 
 
-      <div className='max-w-6xl mx-auto p-3 flex flex-col gap-8 my-10'>
+      <div className='max-w-7xl mx-auto p-3 flex flex-col gap-8 my-10'>
         { offerListings && offerListings.length > 0 && (
           <div className=''>
             <div className='my-3'>
